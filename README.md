@@ -29,8 +29,8 @@ python cookies.py
 登录自己的账号
 成功后会自动退出并在目录生成一个 cookies.txt 文件
 
-适合自己的 chromedriver.exe  
-[chromedriver下载]https://chromedriver.storage.googleapis.com/index.html  
+还需一个适合自己的 chromedriver.exe  
+[chromedriver下载](https://chromedriver.storage.googleapis.com/index.html)  
 具体搭建请百度  
 
 ### 启动
