@@ -15,7 +15,7 @@ aola = webdriver.Chrome(chrome_options=chromeOptions)
 aola.get('http://www.100bt.com/m/creditMall/?gameId=2#task')
 aola.delete_all_cookies()
 
-with open('cookies4.txt','r') as f:
+with open('cookies.txt','r') as f:
     cookies_list = json.load(f)
     for cookie in cookies_list:
         aola.add_cookie(cookie)
@@ -66,21 +66,36 @@ if aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[4]/di
     pass
 else:
     aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[4]/div[3]').click()
-    time.sleep(32)
+    time.sleep(35)
     aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[16]/div[2]/div[8]/div').click()
     time.sleep(2)
 
 time.sleep(0.75)
-#看广告(2) 寻找最初的伙伴
-if aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[5]/div[3]').text == '已完成':
+
+#第五个选项  因为出现过咨询与广告 所以添加判断
+guanggao2 = aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[5]/div[3]').text
+if guanggao2 == '已完成':
     pass
 else:
     aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[5]/div[3]').click()
-    time.sleep(32)
-    aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[16]/div[2]/div[8]/div').click()
     time.sleep(2)
-
+    #判断是什么任务
+    try:
+        #广告
+        aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[16]/div[2]/div[8]/div').click()
+        time.sleep(0.35)
+        aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[17]/div[2]/div[8]/div').click()
+        time.sleep(33)
+        aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[16]/div[2]/div[8]/div').click()
+    except:
+        #咨询
+        aola.get('http://www.100bt.com/m/creditMall/?gameId=2#task')
+        time.sleep(0.75)
+        aola.execute_script('window.scrollTo(0,document.body.scrollHeight)')
 time.sleep(0.75)
+
+aola.execute_script('window.scrollTo(0,document.body.scrollHeight)')
+time.sleep(1)
 #最后一项结束任务
 aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[3]/div/div[2]/div[6]/div[3]').click()
 time.sleep(0.75)
@@ -90,6 +105,8 @@ aola.get('http://www.100bt.com/m/creditMall/?gameId=2#task')
 
 zhanghao_text = aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div/div[1]/div[2]/span[1]').text
 jifen_text = aola.find_element_by_xpath('//*[@id="app"]/div[1]/div[1]/div/div[1]/div[2]/span[2]').text
+
+aola.quit
 
 print(zhanghao_text)
 print(jifen_text)
