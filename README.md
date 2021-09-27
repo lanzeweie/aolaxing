@@ -61,6 +61,7 @@ cookies0.py
 cookies1.py
 ```
 > 注意一定要从 0 开始
+
 修改 `duoyonghu.py`
 ```for s in range(6)```
 ()内的数字 为用户总数量
