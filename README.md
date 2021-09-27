@@ -56,8 +56,10 @@ chromeOptions.add_argument('--no-sandbox')
 获得用户的cookie        
 添加后缀 0 1 2 3 按照数字顺序 有多个就加多少      
 列如
-```cookies0.py
-cookies1.py```
+```
+cookies0.py
+cookies1.py
+```
 
 > 注意一定要从 0 开始
 
