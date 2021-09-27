@@ -51,5 +51,15 @@ centos运行请添加
 chromeOptions.add_argument('--incognito') 
 chromeOptions.add_argument('--no-sandbox')
 ```
+### 多用户版
+运行 'cookies.py'
+获得用户的cookie
+添加后缀 0 1 2 3 按照数字顺序 有多个就加多少
+列如 
+'''
+'cookies0.py'
+'cookies1.py'
+'''
 
+>注意一定要从 0 开始
 > 此脚本只在windows系统测试     linux\mac\centos 并未测试 但区别不大  
