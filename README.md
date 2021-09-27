@@ -1,7 +1,7 @@
 # 奥拉星积分商城自动签到与完成任务
 
 ### 介绍 
-任务网址：http://www.100bt.com/m/creditMall/?gameId=2#task
+任务网址：http://www.100bt.com/m/creditMall/?gameId=2#task        
 自动化目标：  
 一、签到(只需点击)   
 二、答题(选项全部选一次即可)  
