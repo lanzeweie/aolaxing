@@ -60,7 +60,9 @@ chromeOptions.add_argument('--no-sandbox')
 cookies0.py
 cookies1.py
 ```
-
 > 注意一定要从 0 开始
+修改 `duoyonghu.py`
+```for s in range(6)```
+()内的数字 为用户总数量
 
 > 此脚本只在windows系统测试     linux\mac\centos 并未测试 但区别不大  
