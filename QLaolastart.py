@@ -91,7 +91,10 @@ class aola():
         url = f"http://service.100bt.com/creditmall/activity/do_task.jsonp?taskId={taskID}&gameId=2&_=1643440166690"
         task = requests.get(url,headers=hand)
         task_json = json.loads(task.text)
-        message = task_json['jsonResult']['message']
+        try:
+            message = task_json['jsonResult']['message']
+        except:
+            message = "NO"
         return message
 
     def start(Cookie):
@@ -160,8 +163,8 @@ class aola():
             return None
 
 if __name__ == "__main__":
-    #from dotenv import load_dotenv
-    #load_dotenv()
+    from dotenv import load_dotenv
+    load_dotenv()
     import datetime
     now_riqi = datetime.datetime.now().strftime('[%Y/%m/%d, %H:%M:%S]')
     print(f"==================程序执行- 北京时间(UTC+8)：{now_riqi} PM=====================\n")
