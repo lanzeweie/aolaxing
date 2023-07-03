@@ -31,11 +31,11 @@ cookie 可以从cookie.py 手动登录获得
 需要把chromedriver.exe放入当前目录
 Cookie格式例如<br>  
 ```BT_AUTO_tt_common=; Hm_lpvt_7fc3681c21a26a2022ae0ca72e2d6fa5=; BT_LOGIN_tt_common=:187****; Hm_lvt_7fc3681c21a26a2022ae0ca72e2d6fa5=;```  
-py程序获得：
+程序活动：
 ``` python cookie.py ```  
 
 将输出的信息填写到 cookie.json  
-运行任务    
+开始任务  
 
 ``` python aolastop.py ```
 
@@ -44,10 +44,9 @@ py程序获得：
 2023/7/3 增加青龙面板订阅 
 
 ### 订阅教程  
-订阅链接 复制粘贴到 青龙订阅管理中  添加后记得运行一次
-```
-ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart.py|ua.txt" "PNG|README.md" "sendNotify.py"
-```
+```青龙面板``` -> ```订阅管理``` -> ```新建订阅```, 在名称输入框粘贴命令并执行
+1.Github直链：```ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart.py|ua.txt" "PNG|README.md" "sendNotify.py"```
+2.国内代理github：```ql repo https://github.com.cnpmjs.org/lanzeweie/aolaxing.git "QLaolastart.py|ua.txt" "PNG|README.md" "sendNotify.py"```
 订阅更新可以填写 一个月最后一天23点更新 
 ``` 0 23 28-31 * * ``` 
 ### 环境变量|用户COOKIE
