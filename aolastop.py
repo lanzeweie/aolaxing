@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import requests,json,time,os,random
-from DingBotSend import Dingbot
+#from DingBotSend import Dingbot
 weizhi = os.path.dirname(os.path.abspath(__file__))
 
 class aola():
@@ -8,7 +8,7 @@ class aola():
         global hand
         global user_phons
         user_phons = user_phon
-        uatxt = open(weizhi+'/ua.txt',encoding='UTF-8')
+        uatxt = open(weizhi+'/ua.js',encoding='UTF-8')
         ua_lin = uatxt.readlines()
         urlits = []
         for UA in ua_lin:
@@ -81,7 +81,10 @@ class aola():
         url = f"http://service.100bt.com/creditmall/activity/do_task.jsonp?taskId={taskID}&gameId=2&_=1643440166690"
         task = requests.get(url,headers=hand)
         task_json = json.loads(task.text)
-        message = task_json['jsonResult']['message']
+        try:
+            message = task_json['jsonResult']['message']
+        except:
+            message = "NO"
         return message
 
     def start(Cookie,user_phon,user_updata):
@@ -124,7 +127,8 @@ class aola():
         Send_tou = ("奥拉星积分商城活动")
         Send_wei = ("\n\n活动地址\nhttp://www.100bt.com/m/creditMall/?gameId=2#task\n仅供个人使用,不构成任何商业性质")
         Send = Send_tou+Send_zhong+Send_wei
-        Dingbot.Send(Send)
+        print(Send)
+        #Dingbot.Send(Send)
             
             
 
