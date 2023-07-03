@@ -163,8 +163,8 @@ class aola():
             return None
 
 if __name__ == "__main__":
-    from dotenv import load_dotenv
-    load_dotenv()
+    #from dotenv import load_dotenv
+    #load_dotenv()
     import datetime
     now_riqi = datetime.datetime.now().strftime('[%Y/%m/%d, %H:%M:%S]')
     print(f"==================程序执行- 北京时间(UTC+8)：{now_riqi} PM=====================\n")
