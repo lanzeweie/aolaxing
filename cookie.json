@@ -1,0 +1,15 @@
+{
+    "name":"奥拉星积分商城用户Cookie",
+    "time":"2022年1月29日",
+    "lie":[{
+        "name": "仅用来区别账户名字",
+        "Cookie": "完整的cookies，可以从 cookie.py 获得",
+        "Updata": "仅用来记录更新cookie的时间"
+    },
+    {
+        "name": "账户二,可以添加 run : no ，代表不运行",
+        "run": "no",
+        "Cookie": "完整的cookies",
+        "Updata":"按照模板依次添加"
+    }]
+}
