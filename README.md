@@ -44,11 +44,11 @@ Cookie格式例如<br>
 2023/7/3 增加青龙面板订阅 
 
 ### 订阅教程  
-```青龙面板``` -> ```订阅管理``` -> ```新建订阅```, 在名称输入框粘贴命令并执行
+```青龙面板``` -> ```订阅管理``` -> ```新建订阅```, 在名称输入框粘贴命令并执行<br><br>
 1.Github直链：```ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart.py|ua.txt" "PNG|README.md" "sendNotify.py"```<br>
 2.国内代理github：```ql repo https://ghproxy.com/https://github.com/lanzeweie/aolaxing.git "QLaolastart.py|ua.txt" "PNG|README.md" "sendNotify.py"```<br>
-订阅更新可以填写 一个月最后一天23点更新 
-``` 0 23 28-31 * * ``` 
+订阅更新可以填写 一个月最后一天23点更新<br>
+``` 0 23 28-31 * * ``` <br>
 ### 环境变量|用户COOKIE
 青龙面板环境变量 
 新建变量-AOLA_COOKIE-Cookie 
