@@ -31,11 +31,11 @@ cookie 可以从cookie.py 手动登录获得
 需要把chromedriver.exe放入当前目录
 Cookie格式例如<br>  
 ```BT_AUTO_tt_common=; Hm_lpvt_7fc3681c21a26a2022ae0ca72e2d6fa5=; BT_LOGIN_tt_common=:187****; Hm_lvt_7fc3681c21a26a2022ae0ca72e2d6fa5=;```  
-程序活动：
+py程序获得：
 ``` python cookie.py ```  
 
 将输出的信息填写到 cookie.json  
-开始任务  
+运行任务    
 
 ``` python aolastop.py ```
 
