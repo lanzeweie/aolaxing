@@ -17,7 +17,7 @@ weizhi = os.path.dirname(os.path.abspath(__file__))
 class aola():
     def set(Cookie):
         global hand
-        uatxt = open(weizhi+'/ua.txt',encoding='UTF-8')
+        uatxt = open(weizhi+'/ua.js',encoding='UTF-8')
         ua_lin = uatxt.readlines()
         urlits = []
         for UA in ua_lin:
