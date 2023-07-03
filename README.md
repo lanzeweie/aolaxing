@@ -3,7 +3,7 @@
 
 使用 Python3 的自动化完成任务脚本
 
-~~等待开发成青龙一键订阅定时任务~~2023/7/3完成
+~~等待开发成青龙一键订阅定时任务~~<br>2023/7/3 添加青龙管理
 </div>
 
 ## 介绍
@@ -27,8 +27,10 @@
 ## 使用
 在 cookie.json 中填写 用户cookie  
 cookie 可以从cookie.py 手动登录获得  
-当前目录安装chromedriver.exe  
-
+需要把chromedriver.exe放入当前目录
+Cookie格式例如<br>  
+```BT_AUTO_tt_common=; Hm_lpvt_7fc3681c21a26a2022ae0ca72e2d6fa5=; BT_LOGIN_tt_common=:187****; Hm_lvt_7fc3681c21a26a2022ae0ca72e2d6fa5=;```  
+程序活动：
 ``` python cookie.py ```  
 
 将输出的信息填写到 cookie.json  
@@ -37,12 +39,19 @@ cookie 可以从cookie.py 手动登录获得
 ``` python aolastop.py ```
 
 ## 钉钉推送与青龙一键订阅
-~~暂时没有时间完善  ~~
-~~有成功完善的伙伴请帮忙提交~~
-2023/7/3
+~~暂时没有时间完善  ~~  
+~~有成功完善的伙伴请帮忙提交~~  
+2023/7/3 增加青龙面板订阅
+订阅教程  
+订阅链接 复制粘贴到 青龙订阅管理中  添加后记得运行一次
 ```
 ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart.py" "PNG|README.md|ua.txt" "sendNotify.py"
 ```
-
+![新建订阅](./PNG/2.png)  
+![填写订阅链接](./PNG/3.png)  
+一个月检擦一次更新   
+```0 23 28-31 * *```
+![填写时间](./PNG/4.png)  
+![运行一次](./PNG/5.png)  
 ## 截图
 ![任务输出截图](./PNG/1.png)
