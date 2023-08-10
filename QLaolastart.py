@@ -135,7 +135,6 @@ class aola():
             Send_zhong = (aola.start(Cookie_list))
             if Send_zhong == "Cookie失效":
                 print("账户：",Cookie_list,"\nCookie失效")
-                break
         if siji >= 1:
             pass
         else:
