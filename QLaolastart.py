@@ -129,12 +129,14 @@ class aola():
         print(f"用户数量：{Cookie_list_Len}")
         #Cookie_list_Len 有多少个元素就执行多少次
         siji = 0
+        Send_zhong_Send = ""
         for Cookie_list in Cookie_list_H:
             siji = 1
             aola.set(Cookie_list)
-            Send_zhong = (aola.start(Cookie_list))
+            Send_zhong = aola.start(Cookie_list)
             if Send_zhong == "Cookie失效":
                 print("账户：",Cookie_list,"\nCookie失效")
+            Send_zhong_Send += f"\n{str(Send_zhong)}"
         if siji >= 1:
             pass
         else:
@@ -142,7 +144,7 @@ class aola():
             return "没有检测到可以使用的用户Cookie"
         Send_tou = ("奥拉星积分商城活动")
         Send_wei = ("\n\n活动地址\nhttp://www.100bt.com/m/creditMall/?gameId=2#task\n仅供个人使用,不构成任何商业性质")
-        Send = Send_tou+Send_zhong+Send_wei
+        Send = Send_tou+Send_zhong_Send+Send_wei
         #Dingbot.Send(Send)
         return Send
             
