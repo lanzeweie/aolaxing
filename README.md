@@ -19,16 +19,16 @@
 - 支持青龙面板订阅
 
 ## 目录结构
-─── aola
-     ├─── aolastop.py        主程序
-     ├─── cookie.json        用户信息(支持多用户)
-     ├─── cookie.py          手动登录获得cookie
-     └─── ua.txt             浏览器随机UA
+─── aola                
+     ├─── aolastop.py        主程序             
+     ├─── cookie.json        用户信息(支持多用户)             
+     ├─── cookie.py          手动登录获得cookie         
+     └─── ua.txt             浏览器随机UA              
 
-## 使用方法
+## 使用方法 （本地）   
 **python3.8以上+requests库**   
 然后在 cookie.json 中填写 用户cookie
-### 自动获取 
+### 自动获取 Cookie
 >python cookie.py       
 
 【_注意_】   
