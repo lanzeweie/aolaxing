@@ -55,8 +55,8 @@ _**多用户**_<br>
 
 ### 订阅教程   
 ```青龙面板``` -> ```订阅管理``` -> ```新建订阅```, 在名称输入框粘贴命令并执行<br>
-1.Github直链：```ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart|ua" "PNG|README.md" "sendNotify"```<br>
-2.国内代理github：```ql repo https://ghproxy.com/https://github.com/lanzeweie/aolaxing.git "QLaolastart|ua" "PNG|README.md" "sendNotify"```<br>
+1.Github直链：```ql repo https://github.com/lanzeweie/aolaxing.git "QLaolastart" "PNG|README.md" "sendNotify|ua"```<br>
+2.国内代理github：```ql repo https://ghproxy.com/https://github.com/lanzeweie/aolaxing.git "QLaolastart" "PNG|README.md" "sendNotify|ua"```<br>
 订阅更新可以填写 一个月最后一天23点更新 
 ``` 0 23 28-31 * * ``` 
 
